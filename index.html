@@ -64,33 +64,39 @@ SIK SORULANLAR
 İnternetim yok, çalışır mı?
 Evet. Defteriniz telefonunuzda tutulur, kayıt için internet gerekmez.
 
-Telefonumu değiştirirsem defterim ne olur?
-Rapor &gt; Yedek &amp; Excel ekranından defterinizin tamamını tek dosyaya alıp
-kendinize gönderin; yeni telefonda aynı ekrandan geri yükleyin.
+Telefonum kaybolursa ya da değiştirirsem defterim ne olur?
+Rapor &gt; Bulut Yedekleme ekranından bir hesap açın. Defteriniz internet
+geldikçe kendiliğinden yedeklenir; yeni telefonda aynı hesapla giriş
+yapınca her şey geri gelir. Hesap açmak istemezseniz Rapor &gt; Yedek &amp; Excel
+ekranından defterinizi tek dosyaya alıp kendinize gönderebilirsiniz.
 
 Verilerim bir yere gönderiliyor mu?
-Hayır. Bu sürümde hiçbir veri toplanmaz, uygulama sunucuya bağlanmaz.
+Siz bulut yedeklemesini açmadıkça hayır; defteriniz yalnızca telefonunuzda
+kalır. Açarsanız defteriniz yedeklenmek üzere Supabase (sunucular Frankfurt, Almanya)
+üzerinde saklanır. Fotoğraflar gönderilmez.
 
-Defterimi silmek istiyorum.
-Uygulamayı telefonunuzdan kaldırmanız yeterlidir; veriler cihazda tutulduğu
-için uygulamayla birlikte silinir.</pre>
+Hesabımı ve verilerimi silmek istiyorum.
+Rapor &gt; Bulut Yedekleme &gt; "Hesabımı sil" ile hesabınız ve buluttaki
+yedeğiniz kalıcı olarak silinir. Telefondaki defter için uygulamayı
+kaldırmanız yeterlidir.</pre>
   </section>
 
   <section id="gizlilik">
     <h2>Gizlilik Politikası</h2>
     <pre>Ticaret Defteri defterinizi TELEFONUNUZDA tutar.
 
-BU SÜRÜMDE HİÇBİR VERİ TOPLANMAZ.
-Uygulamada hesap açma veya giriş yapma yoktur, sunucuya bağlanmaz.
-Girdiğiniz her şey yalnızca cihazınızda kalır.
+Hesap açmadan kullanırsanız HİÇBİR VERİ TOPLANMAZ; girdiğiniz her şey
+yalnızca cihazınızda kalır. Bulut yedeklemesi isteğe bağlıdır ve yalnızca
+siz hesap açtığınızda çalışır (aşağıya bakın).
 
 CİHAZINIZDA SAKLANAN VERİLER
 
 İşletme adı ve iletişim bilgisi, cari (müşteri/satıcı) kayıtları, alım,
 satış, tahsilat, ödeme, masraf, stok, çek/senet kayıtları ve bunlara
 eklediğiniz fotoğraflar ile notlar.
-Bunlar cihazınızdaki veritabanında tutulur; tarafımıza gönderilmez.
-Uygulamayı silerseniz bu veriler de silinir.
+Bunlar cihazınızdaki veritabanında tutulur. Bulut yedeklemesini
+açmadıysanız tarafımıza gönderilmez ve uygulamayı silerseniz bunlar da
+silinir.
 
 YEDEK ALMA (Rapor &gt; Yedek &amp; Excel)
 Defterinizin tamamını tek dosyaya alabilirsiniz. Dosya sizin telefonunuzda
@@ -99,11 +105,28 @@ hafıza kartı) — bize hiçbir kopyası ulaşmaz. Aynı ekrandan geri de
 yükleyebilirsiniz. Yedek dosyası şifreli değildir; başkasına verirken
 defterinizin tamamını verdiğinizi unutmayın.
 
-İLERİDE EKLENECEK BULUT YEDEKLEMESİ
+BULUT YEDEKLEME (İSTEĞE BAĞLI)
 
-Bulut yedeklemesi ileride eklenirse tamamen isteğe bağlı olacak ve siz
-açmadan hiçbir veri cihazınızdan çıkmayacaktır. O özellik geldiğinde bu
-metin ve mağaza gizlilik bildirimleri güncellenecektir.
+Telefonunuz kaybolur ya da bozulursa defteriniz gitmesin diye hesap
+açabilirsiniz. Açarsanız:
+• E-posta adresiniz ve şifreniz hesabınız için saklanır. Şifreniz düz
+  metin olarak değil, geri döndürülemez biçimde (hash) tutulur.
+• Defter kayıtlarınız (cariler, alım, satış, ödeme, kasa, stok, işçi,
+  çek/senet vb.) şifreli bağlantı (HTTPS) üzerinden Supabase (sunucular Frankfurt, Almanya)
+  üzerinde saklanır. Amaç yalnızca yedekleme ve başka telefondan
+  erişimdir.
+• Fotoğraflar buluta GÖNDERİLMEZ, yalnızca telefonda kalır.
+• Kayıtlarınızı yalnızca siz görebilirsiniz; erişim hesabınıza bağlıdır.
+• Bu verileri reklam, analiz veya başka bir amaçla kullanmayız, kimseye
+  satmayız. Supabase yalnızca barındırma hizmeti verir (veri işleyen).
+
+Hesabınızı istediğiniz an Rapor &gt; Bulut Yedekleme &gt; "Hesabımı sil" ile
+silebilirsiniz; hesabınız ve buluttaki tüm yedeğiniz kalıcı olarak silinir.
+(Barındırma sağlayıcısının kısa süreli teknik felaket yedeklerinden de
+kendiliğinden düşer; bu yedekler başka hiçbir amaçla kullanılmaz.)
+Uygulamaya erişemiyorsanız (örneğin telefonunuzu kaybettiyseniz) hesabınıza
+kayıtlı e-posta adresinden yahyakk0744@gmail.com adresine "hesabımı silin"
+yazmanız yeterlidir; talebiniz en geç 30 gün içinde yerine getirilir.
 
 TOPLANMAYAN VERİLER
 
@@ -115,8 +138,33 @@ TOPLANMAYAN VERİLER
 
 KAMERA
 Kamera izni yalnızca siz bir kayda fiş fotoğrafı eklemek istediğinizde
-istenir. Çektiğiniz fotoğraflar cihazınızda saklanır, hiçbir yere
-gönderilmez. Uygulama galerinizi okumaz ve galerinize kayıt yapmaz.
+istenir. Çektiğiniz fotoğraflar cihazınızda saklanır, bulut yedeklemesi
+açık olsa bile hiçbir yere gönderilmez. Uygulama galerinizi okumaz ve galerinize kayıt yapmaz.
+
+MİKROFON VE SESLİ ASİSTAN
+Mikrofon yalnızca sesli asistanı kullandığınızda açılır. Asistanı adıyla
+çağırma seçeneği açıksa, uygulama AÇIK, ekran yanık ve ana ekranlardan biri
+(Bugün, Cariler, Kasa, Stok, Rapor) açıkken mikrofon dinler; bu sırada
+başlıktaki mikrofon simgesinde yeşil bir nokta yanar. Bu bekleme sırasında
+tanıma YALNIZCA telefonun içinde yapılır, ses hiçbir sunucuya gitmez;
+telefonda internetsiz Türkçe tanıma yoksa adla çağırma çalışmaz. Uygulama
+arka plana geçtiğinde ya da telefon kilitlendiğinde dinleme durur.
+Sesiniz uygulama tarafından kaydedilmez, saklanmaz ve bize gönderilmez.
+Mikrofona dokunup konuştuğunuzda konuşmanız telefonunuzun kendi konuşma
+tanıma servisi (iPhone'da Apple, Android'de Google) tarafından yazıya
+çevrilir; bu servis, Türkçe dil paketi yoksa sesi kendi sunucularında
+işleyebilir ve kendi gizlilik koşullarına tabidir. Uygulama yalnızca
+dönen yazıyı kullanır.
+Asistan, düzelttiğiniz yanlış duyumları ve söylediğiniz kasa darasını
+yalnızca telefonunuzda saklar. Sesli asistanı Ayarlar &gt; Sesli asistan
+ekranından tamamen kapatabilirsiniz.
+
+BİLDİRİMLER (VADE HATIRLATMALARI)
+Veresiye ve çek/senet vadesi yaklaşınca gelen hatırlatmalar telefonunuzun
+kendi zamanlayıcısına kurulur. Bunun için hiçbir veri bize ya da başka bir
+sunucuya gönderilmez; bildirim izni yalnızca bu hatırlatmalar için istenir.
+Bildirimler kilit ekranında görünebilir; uygulama kilidini (PIN) açtıysanız
+bildirimde kişi adı ve tutar gösterilmez.
 
 PARMAK İZİ / FACE ID
 Biyometrik verileriniz uygulamaya AKTARILMAZ. Doğrulama tamamen işletim
@@ -124,10 +172,9 @@ sistemi tarafından yapılır; uygulama yalnızca "doğrulandı" bilgisini alır
 Uygulama PIN'iniz düz metin olarak saklanmaz, şifrelenerek tutulur.
 
 SAKLAMA SÜRESİ
-Verileriniz siz silene kadar cihazınızda saklanır. Uygulamayı kaldırırsanız
-bu veriler de silinir. Sunucuda tutulan bir kopyanız olmadığı için bizden
-silinmesini isteyeceğiniz bir veri de yoktur; yine de bir sorunuz olursa
-aşağıdaki adresten yazabilirsiniz.
+Cihazdaki verileriniz siz silene kadar saklanır; uygulamayı kaldırırsanız
+silinir. Bulut yedeğiniz hesabınız açık olduğu sürece saklanır ve hesabı
+sildiğinizde kalıcı olarak silinir.
 
 HAKLARINIZ
 KVKK'nın 11. maddesi uyarınca verilerinize erişme, düzeltme, silinmesini
@@ -144,7 +191,7 @@ güncellenir.
 
 Veri sorumlusu: Yahya Küçük
 İletişim: yahyakk0744@gmail.com
-Son güncelleme: 9 Eylül 2026</pre>
+Son güncelleme: 1 Ekim 2026</pre>
   </section>
 
   <section id="kvkk">
@@ -158,8 +205,11 @@ veri sorumlusu sıfatıyla Yahya Küçük tarafından hazırlanmıştır.
   adresi ve varsa vergi/TC numarası.
 • İşlem bilgileri: alım, satış, tahsilat, ödeme, borç-alacak kayıtları.
 
-Bu verilerin tamamı YALNIZCA CİHAZINIZDA tutulur; tarafımıza iletilmez.
-Uygulamada hesap açma veya giriş yapma yoktur.
+• Hesap bilgisi (yalnızca bulut yedeklemesini açarsanız): e-posta adresi,
+  şifre (geri döndürülemez biçimde).
+
+Hesap açmazsanız bu verilerin tamamı YALNIZCA CİHAZINIZDA tutulur ve
+tarafımıza iletilmez.
 
 İŞLEME AMACI
 Ticari defterinizin tutulması, borç-alacak takibi, raporlama ve talep
@@ -169,8 +219,9 @@ HUKUKİ SEBEP
 • Sözleşmenin kurulması ve ifası (m.5/2-c): uygulamanın çalışması için gerekli.
 • Meşru menfaat (m.5/2-f): defter kayıtlarının bütünlüğü ve güvenliği.
 
-Bu sürümde veriler cihazdan çıkmadığı için yurt dışına aktarım yoktur.
-Bulut yedeklemesi ileride eklenirse açık rızanız (m.5/1) alınacaktır.
+• Açık rıza (m.5/1 ve m.9): yalnızca bulut yedeklemesi için, hesap açarken
+  ayrıca alınır. Rızanızı hesabınızı silerek istediğiniz an geri
+  alabilirsiniz.
 
 ÖNEMLİ — DEFTERE KAYDETTİĞİNİZ ÜÇÜNCÜ KİŞİLER
 Müşteri ve satıcılarınızın bilgilerini uygulamaya siz girersiniz. Bu kişiler
@@ -179,9 +230,11 @@ dayanağı sağlamak sizin sorumluluğunuzdadır. Uygulama bu verileri yalnızca
 sizin adınıza saklar (veri işleyen konumundadır) ve başka amaçla kullanmaz.
 
 AKTARIM
-Bu sürümde hiçbir aktarım yapılmaz — ne yurt içine ne yurt dışına. Veriler
-cihazdan çıkmaz. Bulut yedeklemesi ileride eklenirse bu metin ve mağaza
-bildirimleri birlikte güncellenir, aktarım açık rızanıza bağlı olur.
+Hesap açmazsanız hiçbir aktarım yapılmaz. Bulut yedeklemesini açarsanız
+yukarıdaki veriler, yalnızca yedekleme ve hesabınıza erişim amacıyla,
+barındırma hizmeti sağlayıcısı Supabase (sunucular Frankfurt, Almanya) sunucularına, yani YURT
+DIŞINA aktarılır. Bu aktarım hesap açarken verdiğiniz açık rızaya
+dayanır. Verileriniz başka hiçbir üçüncü kişiyle paylaşılmaz.
 
 GÜVENLİK
 Uygulama içinde PIN ve biyometrik kilit sunulur; PIN düz metin olarak
@@ -191,7 +244,7 @@ BAŞVURU
 KVKK m.11 haklarınız için: yahyakk0744@gmail.com
 Başvurular en geç 30 gün içinde sonuçlandırılır.
 
-Son güncelleme: 9 Eylül 2026</pre>
+Son güncelleme: 1 Ekim 2026</pre>
   </section>
 
   <section id="sartlar">
@@ -207,8 +260,10 @@ konularda mali müşavirinize danışın.
 
 VERİLERİNİZİN SORUMLULUĞU
 Girdiğiniz bilgilerin doğruluğu size aittir. Uygulama hesaplamaları
-girdiğiniz veriler üzerinden yapar. Yedekleme açık değilse ve cihazınızı
-kaybederseniz verileriniz kurtarılamaz; düzenli yedekleme almanız önerilir.
+girdiğiniz veriler üzerinden yapar. Bulut yedeklemesi açık değilse ve
+cihazınızı kaybederseniz verileriniz kurtarılamaz; bulut yedeklemesini
+açmanız ya da düzenli yedek dosyası almanız önerilir. Hesap şifrenizi
+güvenli tutmak sizin sorumluluğunuzdadır.
 
 KULLANIM KURALLARI
 Uygulamayı hukuka aykırı amaçlarla, başkalarının haklarını ihlal edecek
@@ -225,17 +280,17 @@ Uygulamanın temel özellikleri ücretsizdir. İleride ücretli özellik sunulur
 önceden bildirilir; mevcut verileriniz bu nedenle kilitlenmez.
 
 DEĞİŞİKLİK VE SONA ERME
-Şartlar değişirse uygulama içinde bildirilir. Uygulamayı kaldırarak
-kullanımı istediğiniz zaman sonlandırabilirsiniz.
+Şartlar değişirse uygulama içinde bildirilir. Uygulamayı kaldırarak ve
+varsa hesabınızı silerek kullanımı istediğiniz zaman sonlandırabilirsiniz.
 
 UYGULANACAK HUKUK
 Türkiye Cumhuriyeti hukuku uygulanır.
 
 İletişim: yahyakk0744@gmail.com
-Son güncelleme: 9 Eylül 2026</pre>
+Son güncelleme: 1 Ekim 2026</pre>
   </section>
 </div></main>
 
-<footer>Son güncelleme: 9 Eylül 2026</footer>
+<footer>Son güncelleme: 1 Ekim 2026</footer>
 </body>
 </html>
